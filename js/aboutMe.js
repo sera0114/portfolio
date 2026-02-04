@@ -613,6 +613,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let bodies = [];
   let isInside = false;
   let pointer = { x: render.options.width / 2, y: render.options.height / 2 };
+  
 
   function canvasPoint(e) {
     const r = render.canvas.getBoundingClientRect();
@@ -658,6 +659,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (side === 1) { x = CW + 120; y = Math.random() * CH; }
       if (side === 2) { x = Math.random() * CW; y = CH + 120; }
       if (side === 3) { x = -120; y = Math.random() * CH; }
+
+
 
       const hitScale = d.isSmall ? SMALL_HIT : HIT;
 
