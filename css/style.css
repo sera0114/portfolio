@@ -843,7 +843,6 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
 #section4 .subTextBox .subText span {background: rgb(0 0 0 / 15%); padding: 0 3px 0 2px; margin: 0 2px;}
 #section4 .subTextBox .subText p{margin-bottom: 3rem;}
 
-
 /* 흐르는 글씨 박스 */
 #section4 .marquee-container {
   position: absolute;
@@ -917,7 +916,7 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
   animation: fadeInDown 1s ease-out 0.3s forwards;
 }
 
-/* 한샘몰,진저베어썸네일 감사는 a태그 */
+/* 웹디자인섹션 작업물 썸네일 감사는 a태그 */
 #section4 .web-project>a {
   display: block;
   border-radius: 30px;
@@ -940,7 +939,7 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
   position: relative;
 }
 
-/* 샘몰, 진저베어 제목 */
+/* 웹디자인섹션 작업물 제목 */
 #section4 h4 {
   font-size: 2.25rem;
   font-weight: 600;
@@ -950,7 +949,7 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
   transition: all 0.4s ease;
 }
 
-/* 샘몰, 진저베어 제목 호버 효과 */
+/* 웹디자인섹션 작업물 호버 효과 */
 #section4 h4::after {
   content: "";
   position: absolute;
@@ -971,7 +970,7 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
   width: 100%;
 }
 
-/*Project-Detail-box-한샘몰 밑 글씨*/
+/*Project-Detail-box-웹디자인섹션 작업물 밑 글씨*/
 #section4 .web-project>div>ul {
   display: flex; justify-content: space-between;
   column-gap: 90px;
