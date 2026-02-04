@@ -551,6 +551,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 // matter.js - 인 앤 아웃 인 요소 ============================================================================================================================================
 document.addEventListener("DOMContentLoaded", () => {
   const stage = document.querySelector("#in");
@@ -569,18 +570,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return { sprite: 0.85, hit: 0.60, small: 0.45 };
   }
 
-  // 원본처럼 데이터(크기/작은요소 여부/각도)
+
+  // 아웃 데이터
   const elementData = [
-    { src: "images/aboutMe/matter/skill_obj02.svg", isSmall: false, angle: -10 },
-    { src: "images/aboutMe/matter/skill_obj03.svg", isSmall: false, angle: 4 },
-    { src: "images/aboutMe/matter/skill_obj04.svg", isSmall: false, angle: -8 },
-    { src: "images/aboutMe/matter/skill_obj05.svg", isSmall: false, angle: 12 },
-    { src: "images/aboutMe/matter/skill_obj06.svg", isSmall: false, angle: -6 },
-    { src: "images/aboutMe/matter/skill_obj07.svg", isSmall: false, angle: -5 },
-    { src: "images/aboutMe/matter/skill_obj08.svg", isSmall: false, angle: 9 },
-    { src: "images/aboutMe/matter/skill_obj09.svg", isSmall: false, angle: -7 },
-    { src: "images/aboutMe/matter/skill_obj10.svg", isSmall: false, angle: 5 },
-    { src: "images/aboutMe/matter/skill_obj11.svg", isSmall: false, angle: -12 },
+    { src: "images/aboutMe/matter/do/skill_obj02.png", isSmall: false, angle: -10 },
+    { src: "images/aboutMe/matter/do/skill_obj03.png", isSmall: false, angle: 4 },
+    { src: "images/aboutMe/matter/do/skill_obj04.png", isSmall: false, angle: -8 },
+    { src: "images/aboutMe/matter/do/skill_obj05.png", isSmall: false, angle: 12 },
+    { src: "images/aboutMe/matter/do/skill_obj06.png", isSmall: false, angle: -6 },
+    { src: "images/aboutMe/matter/do/skill_obj07.png", isSmall: false, angle: -5 },
+    { src: "images/aboutMe/matter/do/skill_obj08.png", isSmall: false, angle: 9 },
+    { src: "images/aboutMe/matter/do/skill_obj09.png", isSmall: false, angle: -7 },
+    { src: "images/aboutMe/matter/do/skill_obj10.png", isSmall: false, angle: 5 },
+    { src: "images/aboutMe/matter/do/skill_obj11.png", isSmall: false, angle: -12 },
+    //{ src: "images/aboutMe/matter/skill_obj15.svg", isSmall: false, angle: 3, link: "./pdfs/JeongYeonju_Resume.pdf" },
   ];
 
   const ITEM_W = 520;
@@ -811,24 +814,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // 모바일에서 move가 약할 수 있어 down에서도 갱신
   renderer.canvas.addEventListener("pointerdown", (e) => { updatePointer(e.clientX, e.clientY); }, { passive: true });
 
-  // 데이터
+  // 아웃 데이터
   const elementData = [
-    { src: "images/aboutMe/matter/skill_obj02.svg", isSmall: false, angle: -10 },
-    { src: "images/aboutMe/matter/skill_obj03.svg", isSmall: false, angle: 4 },
-    { src: "images/aboutMe/matter/skill_obj04.svg", isSmall: false, angle: -8 },
-    { src: "images/aboutMe/matter/skill_obj05.svg", isSmall: false, angle: 12 },
-    { src: "images/aboutMe/matter/skill_obj06.svg", isSmall: false, angle: -6 },
-    { src: "images/aboutMe/matter/skill_obj07.svg", isSmall: false, angle: -5 },
-    { src: "images/aboutMe/matter/skill_obj08.svg", isSmall: false, angle: 9 },
-    { src: "images/aboutMe/matter/skill_obj09.svg", isSmall: false, angle: -7 },
-    { src: "images/aboutMe/matter/skill_obj10.svg", isSmall: false, angle: 5 },
-    { src: "images/aboutMe/matter/skill_obj11.svg", isSmall: false, angle: -12 },
-    { src: "images/aboutMe/matter/skill_obj12.svg", isSmall: false, angle: 8 },
-    { src: "images/aboutMe/matter/skill_obj13.svg", isSmall: false, angle: 7 },
-    { src: "images/aboutMe/matter/skill_obj14.svg", isSmall: false, angle: -9 },
+    { src: "images/aboutMe/matter/dont/skill_obj12.png", isSmall: false, angle: -10 },
+    { src: "images/aboutMe/matter/dont/skill_obj13.png", isSmall: false, angle: 4 },
+    { src: "images/aboutMe/matter/dont/skill_obj14.png", isSmall: false, angle: -8 },
+    { src: "images/aboutMe/matter/dont/skill_obj15.png", isSmall: false, angle: 12 },
+    { src: "images/aboutMe/matter/dont/skill_obj16.png", isSmall: false, angle: -6 },
+    { src: "images/aboutMe/matter/dont/skill_obj17.png", isSmall: false, angle: -5 },
+    { src: "images/aboutMe/matter/dont/skill_obj18.png", isSmall: false, angle: 9 },
+    { src: "images/aboutMe/matter/dont/skill_obj19.png", isSmall: false, angle: -7 },
+    { src: "images/aboutMe/matter/dont/skill_obj20.png", isSmall: false, angle: 5 },
+    { src: "images/aboutMe/matter/dont/skill_obj21.png", isSmall: false, angle: -12 },
     //{ src: "images/aboutMe/matter/skill_obj15.svg", isSmall: false, angle: 3, link: "./pdfs/JeongYeonju_Resume.pdf" },
   ];
-
+  
   const ITEM_W = 520, ITEM_H = 140;
   const physics = { restitution: 0.3, friction: 0.3, frictionStatic: 0.8 };
   const deg = (d) => (d * Math.PI) / 180;
@@ -1006,7 +1006,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const rect = container.getBoundingClientRect();
   if (rect.top <= window.innerHeight * 0.8) startSimulationOnce();
 });
-
 
 
 //====================================================================== 우편함 페이드인 ======================================================================
