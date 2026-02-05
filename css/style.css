@@ -1319,7 +1319,7 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
 .footer .box .btnBox {display: flex; gap: 10px; justify-content: flex-end;}
 .footer .box .btnBox .btn {background:var(--var-main-color1); color: #fff; font-size: 1rem; font-weight: 600; cursor: pointer;}
 
-.footer .box .btntBox .btn .contact-btn:hover {cursor: url(../images/cursor/design.png) 0 0, auto;}
+.footer .box .btnBox .contact-btn:hover {cursor: url(../images/cursor/design.png) 0 0, auto;}
 
 /* video */
 .video {margin-bottom: 5rem;}
@@ -1333,10 +1333,11 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
 .footer .box .btnBox .tooltip-wrap { position: relative; }
 .footer .box .btnBox .aboutme {transition: 0.3s;}
 .footer .box .btnBox .aboutme.on {background:var(--var-main-color2);}
-.footer .box .btnBox .tooltip { position: absolute; text-align: center; bottom: 140%; left: 50%; transform: translateX(-50%) translateY(6px); padding: 20px 24px; background: var(--var-main-color2); color: #fff; font-size: 1rem; line-height: 1.75; border-radius: 8px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; }
+.footer .box .btnBox .tooltip { position: absolute; text-align: center; bottom: 28%; left: 86%; transform: translateX(-50%) translateY(6px); padding: 20px 24px; background: var(--var-main-color2); color: #fff; font-size: 1rem; line-height: 1.75; border-radius: 8px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; }
 .footer .box .btnBox .tooltip strong {color: var(--var-main-color1);}
 .footer .box .btnBox .tooltip::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border-width: 6px; border-style: solid; border-color: var(--var-main-color2) transparent transparent transparent; }
-.footer .box .btnBox .tooltip-wrap:hover .tooltip { opacity: 1; transform: translateX(-50%) translateY(0); }
+.footer .box .btnBox .tooltip-wrap:hover + .tooltip { opacity: 1; transform: translateX(-50%) translateY(0);  pointer-events: au
+  ;}
 
 /*눈동자*/
 .eye-wrap {position: absolute; left: 5px; bottom: 5px; display:flex; gap:4px; align-items:center; }
