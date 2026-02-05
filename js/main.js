@@ -1609,7 +1609,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 //====================================================================== matter.js ======================================================================
 document.addEventListener('DOMContentLoaded', function () {
   //📌 Matter.js 기본 객체 생성
@@ -2444,4 +2443,20 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   animate();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const triggerBtn = document.querySelector('.footer .btn.tooltip-wrap');
+    const targetBtn = document.querySelector('.footer .btn.aboutme');
+
+    if (!triggerBtn || !targetBtn) return;
+
+      triggerBtn.addEventListener('mouseenter', () => {
+        targetBtn.classList.add('on');
+      });
+    
+      triggerBtn.addEventListener('mouseleave', () => {
+        targetBtn.classList.remove('on');
+      });
+    });
+    
 });

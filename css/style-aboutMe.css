@@ -331,7 +331,7 @@ article.Personal-statement .ps-block:hover b {font-weight: 600;}
 
 
 /* ================================================== 취미 특기 섹션 ================================================== */
-#title-tab.idv{width:100%;background:#fff;color:#111}
+#title-tab.idv{width:100%;background:#fff;color:#111; margin-bottom: 150px; padding-bottom: 150px;}
 #title-tab .idv__inner{max-width:1200px; margin:0 auto; }
 #title-tab .idv__head{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
 #title-tab .idv__title{font-size:4.5rem; font-family: 'NewYork'; line-height:1.1; margin:0; font-weight:300}
