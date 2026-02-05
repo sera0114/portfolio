@@ -1319,7 +1319,7 @@ body:has([data-cursor]:hover) .cursor, body:has([data-image]:hover) .cursor { op
 .footer .box .btnBox {display: flex; gap: 10px; justify-content: flex-end;}
 .footer .box .btnBox .btn {background:var(--var-main-color1); color: #fff; font-size: 1rem; font-weight: 600; cursor: pointer;}
 
-.footer .box .footer-TextBox .contact-btn:hover {cursor: url(../images/cursor/design.png) 0 0, auto;}
+.footer .box .btntBox .btn .contact-btn:hover {cursor: url(../images/cursor/design.png) 0 0, auto;}
 
 /* video */
 .video {margin-bottom: 5rem;}

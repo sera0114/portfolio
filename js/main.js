@@ -2444,9 +2444,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   animate();
 
+
   document.addEventListener('DOMContentLoaded', () => {
-    const triggerBtn = document.querySelector('.footer .btn.tooltip-wrap');
-    const targetBtn = document.querySelector('.footer .btn.aboutme');
+    const triggerBtn = document.querySelector('.footer .box .btnBox .tooltip-wrap');
+    const targetBtn = document.querySelector('.footer .box .btnBox .aboutme');
 
     if (!triggerBtn || !targetBtn) return;
 
@@ -2458,5 +2459,6 @@ document.addEventListener("DOMContentLoaded", () => {
         targetBtn.classList.remove('on');
       });
     });
+
     
 });
